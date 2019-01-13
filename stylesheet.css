@@ -1,0 +1,260 @@
+@charset "utf-8";
+/* CSS Document */
+body::-webkit-scrollbar {
+	background:white;
+	width:10px;
+}
+body::-webkit-scrollbar-thumb{
+	background:#06F;
+}
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	padding:0;
+	margin:0;
+	background:black;
+}
+body a {
+	text-decoration:none;
+}
+body a:hover {
+	text-decoration:underline;
+}
+#main-menu-div {
+	width:100%;
+	height:50px;
+	top:0;
+	left:0;
+	position:fixed;
+	background:rgba(0,0,0,1);
+	border-bottom:1px solid #FFF;
+	z-index:9999999;
+}
+#menu-div {
+	width:1000px;
+	height:50px;
+	margin-left:14%;
+}
+#menu-div img {
+	float:left;
+	width:200px;
+	margin-top:5px;
+}
+#menu-div nav {
+	float:right;
+	margin-top:-13px;
+}
+nav a {
+	color:rgba(255,255,255,1);
+	transition:all 0.3s linear;
+}
+nav a:hover {
+	color:rgba(0,255,51,1);
+}
+nav ul {
+	list-style:none;
+	display:block;
+}
+nav ul li {
+	list-style:none;
+	display:inline-block;
+	padding:15px;
+	padding-bottom:10px;
+	position:relative;	
+}
+nav ul li ul {
+	visibility:hidden;
+	height:0;
+	left:0;
+	width:140px;
+	background:rgba(255,255,255,1);
+	transition:all 0.2s linear;
+	position:absolute;
+	margin-top:10px;
+	border:1px solid black;
+	overflow:hidden;
+}
+nav ul li:hover ul {
+	visibility:visible;
+	height:185px;
+}
+nav ul li:hover ul li a {
+	color:black;
+}
+nav ul li ul li {
+	list-style:none;
+	display:block;
+	color:black;
+	width:150px;
+	background:White;
+	left:0;
+	margin-left:-40px;
+	text-align:center;
+}
+nav ul li ul li:hover {
+	background:rgba(0,255,0,1);
+}
+nav ul li a {
+	text-decoration:none;
+	font-size:18px;
+}
+nav ul li a:hover {
+	text-decoration:underline;
+}
+nav ul li ul li a {
+	color:rgba(0,0,0,1);
+}
+
+#slider {
+	width:100%;
+	height:600px;
+	background:url(slide.png) repeat-x center;
+	background-size:700%;
+	margin-top:49px;
+	animation:slides 15s linear infinite;
+}
+@keyframes slides {
+	0% { background-position:0% bottom;}
+	10%{background-position:0% bottom;}
+	14.2%{background-position:16.666% bottom;}
+	24.2%{background-position:16.666% bottom;}
+	28.5%{background-position:33.33% bottom;}
+	38.5%{background-position:33.333% bottom;}
+	42.7%{background-position:49.999% bottom;}
+	52.7%{background-position:49.9999% bottom;}
+	56.9%{background-position:66.65% bottom;}
+	66.9%{background-position: 66.65% bottom;}
+	71.1%{background-position: 83.316% bottom;}
+	81.1%{background-position:83.316% bottom;}
+	85.3%{background-position:99.982% bottom;}
+	95.8%{background-position: 99.982% bottom;}
+	100%{background-position:116.66% bottom;}
+}
+#hde {
+	visibility:hidden;
+}
+#caption {
+	width:100%;
+	height:160px;
+	margin-top:400px;
+	text-align:center;
+	background:rgba(0,255,0,0.6);
+}
+#caption h1 {
+	color:rgba(255,255,255,0.9);
+	font-size:50px;
+}
+#caption p {
+	color:rgb(0,0,0);
+	font-style:oblique;
+	font-size:13px;
+	margin-top:-20px;
+}
+#button {
+	width:100px;
+	background:rgba(0,0,0,1);
+	margin-left:45%;
+	padding:20px;
+	transition:all 0.2s linear;
+}
+#button:hover {
+	background:rgba(255,255,255,1);
+}
+#button:hover  a {
+	color:black;
+}
+#button a {
+	color:rgba(255,255,255,1);
+}
+#footer {
+	width:100%;
+	height:230px;
+	background:rgba(0,0,0,1);
+	border-top:2px solid white;
+	
+}
+#footer h4 {
+	float:right;
+	color:white;
+	text-align:end;
+	margin-top:200px;
+	margin-right:5px;
+	bottom:0;
+}
+#footer  a {
+	color:rgba(255,255,255,1);
+}
+#footer a:hover {
+	color:rgba(0,255,0,1);
+	text-decoration:underline;
+}
+#footer ul {
+	list-style:none;
+	float:left;
+	margin-left:150px;
+	letter-spacing:0.2em;
+	
+	
+}
+#footer ul  li {
+	padding:5px;
+}
+#footer ul.first {
+	margin-left:230px;
+}
+	
+#footer h3 {
+	color:rgba(255,255,255,1);
+	font-size:20px;
+}
+#content {
+	min-width:1300px;
+	margin-top:10px;
+	position:relative;	
+	border-top:1px solid #ffffff;
+}
+#contact {
+	width:600px;
+	height:500px;
+	float:left;
+	background:rgba(0,255,0,0.8);
+	margin:30px;
+	transition:all 0.2s linear;
+}
+#contact:hover{
+	background:rgba(0,255,0,0.9);
+}
+#contact h1 {
+	font-size:150px;
+	color:white;
+	text-align:center;
+}
+#contact a:hover {
+	color:white;
+}
+#about {
+	margin:30px;
+	width:600px;
+	height:500px;
+	float:right;
+	background:rgba(0,255,0,0.8);
+	transition:all 0.2s linear;
+}
+#about a:hover {
+	color:white;
+}
+#about:hover {
+	background:rgba(0,255,0,0.9);
+	
+}
+#about h1 {
+	font-size:150px;
+	color:white;
+	text-align:center;
+}
+nav ul li > body {
+	box-shadow:-50px -20px -30px -40px rgba(0,0,0,1);
+	opacity:0.2;
+}
+
+
+
